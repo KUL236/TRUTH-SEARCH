@@ -1156,7 +1156,7 @@ IMPORTANT RULES:
 
     const res=await fetch(API,{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':'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','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
+      headers:{'Content-Type':'application/json','x-api-key':'YOUR_API_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
       body:JSON.stringify({model:MODEL,max_tokens:1200,messages})
     });
     const data=await res.json();
@@ -1366,7 +1366,7 @@ async function speakHindi(){
   try {
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':'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','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
+      headers:{'Content-Type':'application/json','x-api-key':'YOUR_API_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
       body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:200,messages:[{role:'user',content:'Translate this to Hindi only, keep it simple and natural for speech: '+lastResult.explanation}]})
     });
     const data=await res.json();
@@ -1451,7 +1451,7 @@ async function loadLiveFeed(){
   try {
     const res=await fetch(API,{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':'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','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
+      headers:{'Content-Type':'application/json','x-api-key':'YOUR_API_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
       body:JSON.stringify({
         model:MODEL,
         max_tokens:800,
@@ -1548,7 +1548,7 @@ async function checkDomain(){
   try {
     const r=await fetch(API,{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':'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','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
+      headers:{'Content-Type':'application/json','x-api-key':'YOUR_API_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
       body:JSON.stringify({
         model:MODEL,max_tokens:400,
         messages:[{role:'user',content:`As an OSINT analyst, analyze this domain for misinformation risk: "${domain}"
@@ -1591,7 +1591,7 @@ async function analyzePropaganda(){
   try {
     const res=await fetch(API,{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':'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','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
+      headers:{'Content-Type':'application/json','x-api-key':'YOUR_API_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-calls':'true'},
       body:JSON.stringify({
         model:MODEL,max_tokens:500,
         messages:[{role:'user',content:`Analyze this text for propaganda techniques and emotional manipulation.
